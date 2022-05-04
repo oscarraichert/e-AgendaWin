@@ -58,5 +58,37 @@ namespace e_Agenda.WinApp.TelasCompromisso
 
             AtualizarCompromissos();
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            int indice = repositorioCompromisso.Compromissos.IndexOf((Compromisso)listBoxCompromissos.SelectedItem);
+
+            if (listBoxCompromissos.SelectedItem == null)
+            {
+                MessageBox.Show("Você precisa selecionar um item para editar.");
+                return;
+            }
+
+            telaNovo = new(TelaContatos);
+
+            TelaNovoCompromisso tela = telaNovo;
+
+            tela.ShowDialog();
+
+            if (telaNovo.DialogResult == DialogResult.OK)
+            {
+                Compromisso compromisso = telaNovo.compromisso;
+
+                repositorioCompromisso.Compromissos[indice] = compromisso;
+
+                AtualizarCompromissos();
+            }
+        }
+
+        private void btnVisualizar_Click(object sender, EventArgs e)
+        {
+            TelaVisualizarCompromissos tela = new(repositorioCompromisso);
+            tela.ShowDialog();
+        }
     }
 }
