@@ -55,6 +55,8 @@ namespace e_Agenda.WinApp.TelasTarefa
             tarefa.Prioridade = prioridade;
             tarefa.Titulo = titulo;
             tarefa.Descrição = descricao;
+            tarefa.DataCriacao = DateTime.Now;
+            tarefa.Itens = new List<Item>();
         }
     }
 }

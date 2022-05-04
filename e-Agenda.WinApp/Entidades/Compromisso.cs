@@ -12,10 +12,10 @@ namespace e_Agenda.WinApp.Entidades
         public string Assunto;
         public string Local;
         public string Data;
-        public decimal HoraInicio;
-        public decimal MinutosInicio;
-        public decimal HoraTermino;
-        public decimal MinutosTermino;
+        public int HoraInicio;
+        public int MinutosInicio;
+        public int HoraTermino;
+        public int MinutosTermino;
         public Contato Contato;
 
         public Compromisso()

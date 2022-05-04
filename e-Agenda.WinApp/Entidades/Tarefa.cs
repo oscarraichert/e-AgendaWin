@@ -21,8 +21,7 @@ namespace e_Agenda.WinApp
 
         public Tarefa()
         {
-            DataCriacao = DateTime.Now;
-            Itens = new List<Item>();
+            
         }
 
         public override string ToString()

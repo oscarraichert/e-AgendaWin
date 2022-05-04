@@ -14,9 +14,9 @@ namespace e_Agenda.WinApp
 {
     public partial class TelaTarefas : Form
     {
-        TelaCadastroTarefa telaCadastro = new();
-        TelaItensTarefa telaItens;
-        TelaVisualizarTarefas telaVisualizar;
+        public TelaCadastroTarefa telaCadastro = new();
+        public TelaItensTarefa telaItens;
+        public TelaVisualizarTarefas telaVisualizar;
 
         public TelaTarefas()
         {

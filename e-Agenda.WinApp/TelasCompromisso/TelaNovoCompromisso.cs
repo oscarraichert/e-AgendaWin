@@ -43,10 +43,10 @@ namespace e_Agenda.WinApp.TelasCompromisso
             compromisso.Assunto = textBoxAssunto.Text;
             compromisso.Local = textBoxLocal.Text;
             compromisso.Data = textBoxData.Text;
-            compromisso.HoraInicio = Convert.ToDecimal(textBoxHoraIhrs.Text);
-            compromisso.MinutosInicio = Convert.ToDecimal(textBoxHoraImin.Text);
-            compromisso.HoraTermino = Convert.ToDecimal(textBoxTerminoHrs.Text);
-            compromisso.MinutosTermino = Convert.ToDecimal(textBoxMinutosTermino.Text);
+            compromisso.HoraInicio = Convert.ToInt32(textBoxHoraIhrs.Text);
+            compromisso.MinutosInicio = Convert.ToInt32(textBoxHoraImin.Text);
+            compromisso.HoraTermino = Convert.ToInt32(textBoxTerminoHrs.Text);
+            compromisso.MinutosTermino = Convert.ToInt32(textBoxMinutosTermino.Text);
 
             compromisso.Contato = (Contato)listBoxContatos.SelectedItem;
         }

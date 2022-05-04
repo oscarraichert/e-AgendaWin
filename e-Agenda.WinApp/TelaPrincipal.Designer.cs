@@ -31,6 +31,7 @@
             this.btnTarefas = new System.Windows.Forms.Button();
             this.btnContatos = new System.Windows.Forms.Button();
             this.btnCompromissos = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnTarefas
@@ -66,11 +67,22 @@
             this.btnCompromissos.UseVisualStyleBackColor = true;
             this.btnCompromissos.Click += new System.EventHandler(this.btnCompromissos_Click);
             // 
+            // btnSalvar
+            // 
+            this.btnSalvar.Location = new System.Drawing.Point(345, 304);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(78, 23);
+            this.btnSalvar.TabIndex = 1;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(435, 339);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.btnCompromissos);
             this.Controls.Add(this.btnContatos);
             this.Controls.Add(this.btnTarefas);
@@ -87,5 +99,6 @@
         private System.Windows.Forms.Button btnTarefas;
         private System.Windows.Forms.Button btnContatos;
         private System.Windows.Forms.Button btnCompromissos;
+        private System.Windows.Forms.Button btnSalvar;
     }
 }
